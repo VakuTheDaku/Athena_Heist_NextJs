@@ -15,7 +15,7 @@ export default function A(props){
     }
     const onSubmit = (event) => {
         trackPromise(
-            fetch('/api', {
+            fetch('https://athena-heist.herokuapp.com/api', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 // We convert the React state to JSON and send it as the POST body
