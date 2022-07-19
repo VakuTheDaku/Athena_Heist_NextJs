@@ -7,7 +7,7 @@ export default function B(props){
     const handlecodeChange = (event) => {
         const code = event.target.value
 
-        setCodeB(code)
+        setCodeB({code:code})
 
     }
     const onSubmit = (event) => {
