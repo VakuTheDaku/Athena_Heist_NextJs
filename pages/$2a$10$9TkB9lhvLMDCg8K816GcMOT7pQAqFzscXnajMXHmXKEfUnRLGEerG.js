@@ -1,7 +1,6 @@
 
 import { useState } from "react"
 import { usePromiseTracker } from "react-promise-tracker";
-
 import { trackPromise } from 'react-promise-tracker';
 export default function A(props){
     const [codeA,setCodeA]=useState()
@@ -15,7 +14,7 @@ export default function A(props){
     }
     const onSubmit = (event) => {
         trackPromise(
-            fetch('/api', {
+            fetch('/Aapi', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 // We convert the React state to JSON and send it as the POST body
@@ -42,10 +41,12 @@ export default function A(props){
         <div className="min-h-screen bg-yellow-400">
             
             <div className="text-black min-h-screen grid place-items-center my-auto">
-            <form onSubmit={onSubmit} className="bg-transparent text-white">
+            <form onSubmit={onSubmit} className="bg-transparent text-white grid place-items-center">
                 <div className="label flex items-center justify-center">This is the A page</div>
                 <input required className='input bg-white bg-opacity-75 rounded-md p-2 w-full text-center' type="text" name="code" placeholder='code' onChange={handlecodeChange} />
-                <button className="btn bg-yellow-800" type="submit">submit</button>
+                <div className="bg-black bg-opacity-90 rounded my-6">
+                <button className="btn p-3" type="submit">submit</button>
+                </div>
             </form>
             <div>
                 {place}

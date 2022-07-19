@@ -21,10 +21,50 @@ app
     const server = express();
     server.use(bodyParser.json())
     server.use(cors(corsOptions))
-    server.post("/api", (req,res)=>{
+    server.post("/Aapi", (req,res)=>{
+      if(req.body.code==="Turing"||req.body.code==="TURING"||req.body.code==="turing"){
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
         res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+      }
+      else{
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
+      }
     });
+
+
+    server.post("/Bapi", (req,res)=>{
+      if(req.body.code==="Neumann"||req.body.code==="NEUMANN"||req.body.code==="neumann"){
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+      }
+      else{
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
+      }
+    });
+
+
+    server.post("/Capi", (req,res)=>{
+      if(req.body.code==="Lovelace"||req.body.code==="LOVELACE"||req.body.code==="lovelace"){
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+      }
+      else{
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
+      }
+    });
+
+
+
+    server.post("/Dapi", (req,res)=>{
+      if(req.body.code==="Torvalds"||req.body.code==="TORVALDS"||req.body.code==="torvalds"){
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+      }
+      else{
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
+      }
+    });
+
 
     server.get("*", (req, res) => {
       return handle(req, res);
