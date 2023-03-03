@@ -24,7 +24,7 @@ app
     server.post("/Aapi", (req,res)=>{
       if(req.body.code==="Turing"||req.body.code==="TURING"||req.body.code==="turing"){
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
-        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "116 117 114 105 110 103"}))
       }
       else{
         res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
@@ -35,7 +35,7 @@ app
     server.post("/Bapi", (req,res)=>{
       if(req.body.code==="Neumann"||req.body.code==="NEUMANN"||req.body.code==="neumann"){
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
-        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "110 101 117 109 097 110 110"}))
       }
       else{
         res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
@@ -46,7 +46,7 @@ app
     server.post("/Capi", (req,res)=>{
       if(req.body.code==="Lovelace"||req.body.code==="LOVELACE"||req.body.code==="lovelace"){
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
-        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "108 111 118 101 108 097 099 101"}))
       }
       else{
         res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
@@ -58,7 +58,7 @@ app
     server.post("/Dapi", (req,res)=>{
       if(req.body.code==="Torvalds"||req.body.code==="TORVALDS"||req.body.code==="torvalds"){
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Called me")
-        res.send(JSON.stringify({"status": 200, "error": null, "text": "go to MECH 404"}))
+        res.send(JSON.stringify({"status": 200, "error": null, "text": "084 111 114 118 097 108 100 115"}))
       }
       else{
         res.send(JSON.stringify({"status": 200, "error": null, "text": "The code entered is invalid"}))
