@@ -38,10 +38,10 @@ export default function D(props){
             
             <div className="text-black min-h-screen grid place-items-center my-auto">
             <form onSubmit={onSubmit} className="bg-transparent text-white grid place-items-center">
-                <div className="label flex items-center justify-center">This is the D page</div>
-                <input required className='input bg-white bg-opacity-75 rounded-md p-2 w-full text-center' type="text" name="code" placeholder='code' onChange={handlecodeChange} />
+                <div className="label flex items-center justify-center">Is the creator and, historically, the lead developer of the Linux kernel</div>
+                <input required className='input bg-white bg-opacity-75 rounded-md p-2 w-full text-center text-black' type="text" name="code" placeholder='code' onChange={handlecodeChange} />
                 <div className="bg-black bg-opacity-90 rounded my-6">
-                <button className="btn p-3" type="submit">submit</button>
+                <button className="btn p-3" type="submit" >submit</button>
                 </div>
             </form>
             </div>
